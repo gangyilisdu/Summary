@@ -1,0 +1,17 @@
+# conda install pytorch
+# view en
+conda info --e
+
+# create en
+conda create -n pytorch python=3.8.8
+
+# open pytorch en
+conda activate pytorch 
+
+# install pytorch and jupyter notebook in en
+conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch
+pip install jupyter notebook
+
+# verify
+python
+torch.cuda.is_available()
